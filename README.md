@@ -4,3 +4,4 @@
 ## Team
 * 202011217 Suro Choi
 * 202111101 Junyoung Shin
+* 202211061 Minyeong Nam
