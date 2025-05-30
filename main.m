@@ -33,7 +33,8 @@ y_output_denoised = zeros(size(y_input));
 
 % 3. Process Each Channel
 for channel_idx = 1:num_input_channels
-    current_channel_audio = y_input(:, channel_idx)(:);
+    current_channel_audio = y_input(:, channel_idx);
+    current_channel_audio = current_channel_audio(:);
     noise_samples_count = min(round(noise_duration_sec * fs), length(current_channel_audio));
     
     if noise_samples_count < win_length
